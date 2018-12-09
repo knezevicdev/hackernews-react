@@ -1,25 +1,19 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Stories from "./components/Stories";
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+          <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+            <div className="container">
+              <a className="navbar-brand" href="/">Hacker news</a>
+            </div>
+          </nav>
+
+          <main role="main" className="container">
+            <Stories />
+          </main>
       </div>
     );
   }
